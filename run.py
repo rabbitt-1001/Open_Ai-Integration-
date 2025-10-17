@@ -23,7 +23,7 @@ def index():
 
 
 # MINING-ONLY DOMAIN FILTER
-# We consider "mining" in the industrial sense
+# consider "mining" in the industrial sense
 
 MINING_PHRASES = [
     "open pit", "open-pit", "underground mining", "block caving", "longwall",
@@ -169,5 +169,6 @@ def prompt():
 if __name__ == '__main__':
     # debug=True for development only
     app.run(port=4444, debug=True)
+
 
 
