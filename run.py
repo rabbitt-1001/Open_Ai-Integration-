@@ -20,7 +20,7 @@ def index():
     return 'Hello World!'
 
 
-# --- ALLOWLIST / matching logic (ADD/EDIT these lists to suit your needs) ---
+# ALLOWLIST 
 ALLOWED_PHRASES = [
     "special-case: financials q1",
     "show me report x"
@@ -58,7 +58,6 @@ def is_allowed_prompt(prompt: str) -> bool:
             return True
 
     return False
-# --- end allowlist ---
 
 
 @app.route('/api/prompt', methods=['GET', 'POST'])
@@ -118,3 +117,4 @@ def prompt():
 if __name__ == '__main__':
     # debug=True for development only
     app.run(port=4444, debug=True)
+
