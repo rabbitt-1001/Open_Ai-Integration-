@@ -23,8 +23,7 @@ def index():
 
 
 # MINING-ONLY DOMAIN FILTER
-# We consider "mining" in the industrial sense: methods, equipment, geology, safety,
-# mineral processing, economics, regulations, automation, etc.
+# We consider "mining" in the industrial sense
 
 MINING_PHRASES = [
     "open pit", "open-pit", "underground mining", "block caving", "longwall",
@@ -54,7 +53,6 @@ MINING_PHRASES = [
     "geometallurgy", "composite sampling", "variography", "kriging"
 ]
 
-# Broader keyword list to quickly gate mining topics.
 MINING_KEYWORDS = [
     "mining", "mine", "miner", "mineral", "ore", "pit", "shaft", "drift", "stope",
     "blast", "drill", "ventilation", "haul", "flotation", "tailings", "leach",
@@ -171,4 +169,5 @@ def prompt():
 if __name__ == '__main__':
     # debug=True for development only
     app.run(port=4444, debug=True)
+
 
